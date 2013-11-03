@@ -2,9 +2,9 @@ package javabasico.clase2.persona;
 
 public final class Persona {
 
-    public String nombres;
-    public String apellidos;
-    public int edad;
+    private String nombres;
+    private String apellidos;
+    private int edad;
     
     public Persona() {
     }
