@@ -16,9 +16,6 @@ public final class Persona {
         this.printNombreCompleto();
     }
 
-    public Persona() {
-    }
-
     public void printNombreCompleto()  {
         System.out.println(nombres + " " +apellidos);
     }
