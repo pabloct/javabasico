@@ -3,8 +3,8 @@ package app.clase3.interfases.posicion;
 public class Teodolito {
     
     public static void main(String[] args) {
-        Position carro = new Auto(40, 30);
-        Position pablo = new Persona(40, 70);
+        Position carro = new Auto(20, 30);
+        Position pablo = new Persona(50, 20);
         
         Teodolito.getDistancia(pablo, carro);
     }
