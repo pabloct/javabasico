@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package app.clase3.universo;
+ 
 
 import app.clase3.universo.interfases.Guerrero;
 import app.clase3.universo.interfases.Politico;
