@@ -27,7 +27,6 @@ public class Cliente {
             String msgServer = in.readLine();
             System.out.println(msgServer);
 
-            //String operacion = ;
             // COMUNICACION 2
             out.println(obtenerOperacion());
 
@@ -36,7 +35,15 @@ public class Cliente {
             System.out.println(msgServer);
 
             // COMUNICACION 4
-            out.println(obtenerOperando());
+            out.println(obtenerOperando(1));
+            
+            // COMUNICACION 5
+            out.println(obtenerOperando(2));
+            
+            // COMUNICACION 6
+            msgServer = in.readLine();
+            System.out.println(msgServer);
+            
             // Cerrar canales
             in.close();
             out.close();
@@ -49,15 +56,15 @@ public class Cliente {
     private String obtenerOperacion() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("CLIENTE - Elija operacion : ");
-        int operacion = scanner.nextInt();
-        return Integer.toString(operacion);
+        System.out.println("LADO CLIENTE - Elija operacion : ");
+        //String operacion = scanner.nextString();
+        return scanner.next();//Integer.toString(operacion);
     }
 
-    private String obtenerOperando() {
+    private String obtenerOperando(int i) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("CLIENTE - ingresar operando : ");
+        System.out.println("LADO CLIENTE - ingresar operando "+i+ " : ");
         int operacion = scanner.nextInt();
         return Integer.toString(operacion);
     }
