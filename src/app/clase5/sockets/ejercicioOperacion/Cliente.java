@@ -44,6 +44,8 @@ public class Cliente {
             msgServer = in.readLine();
             System.out.println(msgServer);
             
+            msgServer = in.readLine();
+            System.out.println(msgServer);
             // Cerrar canales
             in.close();
             out.close();

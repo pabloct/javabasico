@@ -85,13 +85,19 @@ public class Servidor {
                 operacionRealizada = "MULTIPLICACION";
                 break;
             case "/":
-                if (operando2 != 0) {
+               // if (operando2 != 0) {
+                try {
                     resultado = operando1 / operando2;
                     operacionRealizada = "DIVISION";
-                } else {
-                    error = true;
-                    mensaje = "error: NO EXISTE LA DIVISION CON CERO!!!";
+                } catch (Exception e) {
+                    mensaje = e.getMessage();
+                   //System.out.println("Error : " + e.getMessage());
+                   // System.out.println("error: NO EXISTE LA DIVISION CON CERO!!!");
                 }
+              //  } else {
+               //     error = true;
+                //    mensaje = "error: NO EXISTE LA DIVISION CON CERO!!!";
+              //  }
 
                 break;
             default:
